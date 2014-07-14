@@ -12,6 +12,5 @@
 @interface RSQuickLookZIP : NSObject
 
 +(NSString*)htmlForZIP:(NSURL*)url;
-+(WebView*)quicklookWebViewForZIP:(NSURL*)url forSize:(CGSize)scaleSize;
 
 @end
