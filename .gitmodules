@@ -1,0 +1,3 @@
+[submodule "SubModules/zipzap"]
+	path = SubModules/zipzap
+	url = https://github.com/pixelglow/zipzap.git
