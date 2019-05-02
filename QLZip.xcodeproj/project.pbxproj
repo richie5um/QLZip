@@ -47,10 +47,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		BA1A9E72227B0722009FD773 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 		E9A56D721974346F00A10CD3 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
-			dstPath = "~/Library/QuickLook";
+			dstPath = /$HOME/Library/QuickLook;
 			dstSubfolderSpec = 0;
 			files = (
 				E9A56D731974348C00A10CD3 /* QLZip.qlgenerator in CopyFiles */,
@@ -183,6 +192,7 @@
 				E9A56D521974338F00A10CD3 /* Resources */,
 				E9A56D531974338F00A10CD3 /* Rez */,
 				E9A56D721974346F00A10CD3 /* CopyFiles */,
+				BA1A9E8D227B0B0A009FD773 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -270,7 +280,34 @@
 		};
 /* End PBXRezBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		BA1A9E8D227B0B0A009FD773 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "rm -Rf \"~/Library/QuickLook/$FULL_PRODUCT_NAME\"\ncp -R \"$BUILT_PRODUCTS_DIR/$FULL_PRODUCT_NAME\" ~/Library/QuickLook\nqlmanage -r\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		BA1A9E70227B0722009FD773 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E9A56D4F1974338F00A10CD3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
